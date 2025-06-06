@@ -180,10 +180,9 @@ fun HomeScreen(
                         Spacer(modifier = Modifier.height(10.dp))
                         Text(
                             text = "Notes",
-                            fontSize = 20.sp,
+                            fontSize = 18.sp,
                             fontWeight = FontWeight.Medium,
                             color = Color.White,
-                            letterSpacing = 1.sp,
                             fontFamily = FontFamily(Font(R.font.lexend))
                         )
                         Text(
@@ -223,11 +222,10 @@ fun HomeScreen(
                         )
                         Spacer(modifier = Modifier.height(10.dp))
                         Text(
-                            text = "To-do",
-                            fontSize = 20.sp,
+                            text = "To-do list",
+                            fontSize = 18.sp,
                             fontWeight = FontWeight.Medium,
                             color = Color.White,
-                            letterSpacing = 1.sp,
                             fontFamily = FontFamily(Font(R.font.lexend))
                         )
                         Text(

@@ -58,7 +58,8 @@ fun AppNavGraph(vm: ViewModel = viewModel()) {
             route = Screen.ProfileScreen.route
         ) {
             ProfileScreen(
-                navController
+                navController,
+                vm
             )
         }
         composable(

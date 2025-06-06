@@ -23,6 +23,7 @@ class ViewModel(app: Application) : AndroidViewModel(app) {
     val date = System.currentTimeMillis()
     val deadline = MutableStateFlow<Long?>(null)
     val todolistTitle = MutableStateFlow("")
+
     val isClicked = mutableStateMapOf<Int, Boolean>()
 
     private val noteRepository: NoteRepository
@@ -38,6 +39,12 @@ class ViewModel(app: Application) : AndroidViewModel(app) {
     val editingTaskTitle = mutableStateOf("")
 
 
+    private val _notificationsEnabled = MutableStateFlow(false)
+    val notificationsEnabled: StateFlow<Boolean> = _notificationsEnabled
+
+    fun setNotificationsEnabled(enabled: Boolean) {
+        _notificationsEnabled.value = enabled
+    }
     init {
         val db = Room.databaseBuilder(
             app,
