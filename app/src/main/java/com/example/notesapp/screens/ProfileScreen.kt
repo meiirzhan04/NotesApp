@@ -71,7 +71,7 @@ fun ProfileScreen(
         Spacer(modifier = Modifier.height(32.dp))
         Row(
             modifier = Modifier.fillMaxWidth(),
-            verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+            verticalAlignment = Alignment.CenterVertically,
         ) {
             Icon(
                 imageVector = Icons.Default.AccountCircle,
@@ -80,9 +80,7 @@ fun ProfileScreen(
                 modifier = Modifier.size(60.dp)
             )
             Spacer(modifier = Modifier.width(12.dp))
-            Column(
-
-            ) {
+            Column {
                 Text(
                     text = "User",
                     fontWeight = FontWeight.Bold,
@@ -239,6 +237,5 @@ fun SimpleSwitch(
                 )
             )
         }
-
     }
 }
